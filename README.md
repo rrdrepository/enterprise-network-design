@@ -4,7 +4,7 @@
 A computer networking project developed using Cisco Packet Tracer to design and configure an enterprise network.
 
 ## Network Topology
-![Enterprise network topology](images/network-topology.png)
+![Enterprise network topology](network-topology.png)
 
 ## Technologies
 - Cisco Packet Tracer
