@@ -18,6 +18,12 @@ Connectivity tests were performed using Cisco Packet Tracer's command prompt.
 | PC1 to PC2             | `192.168.20.11`| Passed — 4/4 replies |
 | PC1 to PC4             | `192.168.30.11`| Reachable — 3/4 replies on initial test |
 
+### DHCP and Gateway Validation
+![DHCP and gateway test](dhcp-gateway-test.png)
+
+### Inter-VLAN Connectivity
+![PC-to-PC connectivity tests](connectivity-tests.png)
+
 ### DHCP Validation
 PC1 successfully received IPv4 address `192.168.10.11` with subnet mask `255.255.255.0` and default gateway `192.168.10.1`.
 R1's DHCP pool output also showed one leased address in each of the Staff, Student and Guest pools.
