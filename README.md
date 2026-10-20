@@ -6,6 +6,22 @@ A computer networking project developed using Cisco Packet Tracer to design and 
 ## Network Topology
 ![Enterprise network topology](network-topology.png)
 
+## Testing & Validation
+
+Connectivity tests were performed using Cisco Packet Tracer's command prompt.
+| Test                   | Destination    | Result               |
+|------------------------|----------------|----------------------|
+| PC1 to default gateway | `192.168.10.1` | Passed — 4/4 replies |
+| PC1 to VLAN 20 gateway | `192.168.20.1` | Passed — 4/4 replies |
+| PC1 to VLAN 30 gateway | `192.168.30.1` | Passed — 4/4 replies |
+| PC1 to VLAN 99 gateway | `192.168.99.1` | Passed — 4/4 replies |
+| PC1 to PC2             | `192.168.20.11`| Passed — 4/4 replies |
+| PC1 to PC4             | `192.168.30.11`| Reachable — 3/4 replies on initial test |
+
+### DHCP Validation
+PC1 successfully received IPv4 address `192.168.10.11` with subnet mask `255.255.255.0` and default gateway `192.168.10.1`.
+R1's DHCP pool output also showed one leased address in each of the Staff, Student and Guest pools.
+
 ## Technologies
 - Cisco Packet Tracer
 - VLANs and 802.1Q trunking
